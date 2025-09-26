@@ -8,9 +8,11 @@ try:
 except Exception:
     joblib = None
 
-MODELS_DIR = Path("models")
+# Use current directory instead of "models"
+MODELS_DIR = Path(".")
 RESULTS_DIR = Path("results")
-DATA_PATH = Path("Functions") / "financial_anomaly_data.csv"
+# Point directly to the dataset in the same directory
+DATA_PATH = Path("financial_anomaly_data.csv")
 
 
 def load_models():
