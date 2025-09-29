@@ -88,6 +88,7 @@ def main():
         st.stop()
     models, scaler = models_and_scaler
 
+    st.markdown("**Required input columns (exact names):** `Timestamp`, `TransactionID`, `AccountID`, `Amount`, `Merchant`, `TransactionType`, `Location`")
     uploaded = st.file_uploader("Upload CSV file", type=["csv"])
     use_sample = st.checkbox("Use sample dataset (provided)", value=True)
 
